@@ -14,6 +14,20 @@ class MessageCreationViewController: UIViewController, UINavigationBarDelegate {
         super.viewDidLoad()
 
         navigationBar.delegate = self
+        setUpApearance()
+    }
+    
+    private func setUpApearance() {
+        view.backgroundColor = AppearanceHelper.backgroundGray
+        AppearanceHelper.style(button: clearTextButton)
+        AppearanceHelper.style(button: sendMessageButton)
+        messageTextView.backgroundColor = AppearanceHelper.backgroundGray
+        messageTextView.textColor = .white
+        messageTextView.font = AppearanceHelper.typerighterFont(with: .body, pointSize: 25)
+        messageTextView.layer.borderWidth = 0.5
+        messageTextView.layer.borderColor = UIColor.white.cgColor
+        messageTextView.layer.cornerRadius = 10
+        messageTextView.keyboardAppearance = .dark
     }
     
     func position(for bar: UIBarPositioning) -> UIBarPosition {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32BCF5F72301C8FB00E760D9 /* AppearanceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BCF5F62301C8FB00E760D9 /* AppearanceHelper.swift */; };
 		4612369A212CDA8D00E7FF73 /* MessageCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46123699212CDA8D00E7FF73 /* MessageCreationViewController.swift */; };
 		46392CFD212D248800C65AB7 /* rm_typerighter_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46392CFC212D244E00C65AB7 /* rm_typerighter_medium.ttf */; };
 		46A2C0F3212B500000E7FF73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A2C0F2212B500000E7FF73 /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32BCF5F62301C8FB00E760D9 /* AppearanceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceHelper.swift; sourceTree = "<group>"; };
 		46123699212CDA8D00E7FF73 /* MessageCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCreationViewController.swift; sourceTree = "<group>"; };
 		46392CFC212D244E00C65AB7 /* rm_typerighter_medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = rm_typerighter_medium.ttf; sourceTree = "<group>"; };
 		46A2C0EF212B500000E7FF73 /* Lambda Messages Theming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lambda Messages Theming.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				46A2C10A212B659500E7FF73 /* AuthenticationHelper.swift */,
+				32BCF5F62301C8FB00E760D9 /* AppearanceHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46A2C10D212B68B800E7FF73 /* SignupViewController.swift in Sources */,
+				32BCF5F72301C8FB00E760D9 /* AppearanceHelper.swift in Sources */,
 				46A2C107212B61FB00E7FF73 /* Message.swift in Sources */,
 				46A2C109212B626F00E7FF73 /* MessageController.swift in Sources */,
 				46A2C105212B60D100E7FF73 /* MessageListViewController.swift in Sources */,

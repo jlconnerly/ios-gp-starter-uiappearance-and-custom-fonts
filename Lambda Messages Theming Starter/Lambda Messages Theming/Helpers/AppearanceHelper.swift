@@ -1,9 +1,9 @@
 //
 //  AppearanceHelper.swift
-//  Lambda Messages Theming
+//  Tasks
 //
-//  Created by Andrew R Madsen on 1/28/19.
-//  Copyright © 2019 Lambda School. All rights reserved.
+//  Created by Jake Connerly on 8/12/19.
+//  Copyright © 2019 Andrew R Madsen. All rights reserved.
 //
 
 import Foundation

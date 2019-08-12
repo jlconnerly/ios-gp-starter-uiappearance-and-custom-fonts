@@ -19,6 +19,16 @@ class MessageListViewController: UIViewController, UITableViewDelegate, UITableV
         NotificationCenter.default.addObserver(self, selector: #selector(sortMessageArray), name: messagesWereUpdatedNotification, object: nil)
         
         messageController.fetchMessages()
+        setUpAppearance()
+    }
+    
+    private func setUpAppearance() {
+        view.backgroundColor = AppearanceHelper.backgroundGray
+        tableView.backgroundColor = AppearanceHelper.backgroundGray
+        tableView.tableHeaderView?.backgroundColor = AppearanceHelper.backgroundGray
+        
+        newMessageButton.backgroundColor = AppearanceHelper.lambdaRed
+        newMessageButton.layer.cornerRadius = newMessageButton.bounds.size.width / 2
     }
     
     @objc private func sortMessageArray() {
@@ -49,6 +59,12 @@ class MessageListViewController: UIViewController, UITableViewDelegate, UITableV
         
         cell.textLabel?.text = message.text
         cell.detailTextLabel?.text = message.sender
+        cell.textLabel?.font = AppearanceHelper.typerighterFont(with: .caption1, pointSize: 30)
+        cell.detailTextLabel?.font = AppearanceHelper.typerighterFont(with: .caption2, pointSize: 25)
+        cell.textLabel?.backgroundColor = .clear
+        cell.detailTextLabel?.backgroundColor = .clear
+        cell.textLabel?.textColor = .white
+        cell.detailTextLabel?.textColor = .white
         
         return cell
     }
